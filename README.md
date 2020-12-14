@@ -1,1 +1,3 @@
-# emacs.d
+# Practice for learn "Emacs from stratch"
+
+
