@@ -41,7 +41,7 @@
   :after org
   :hook (org-mode . org-bullets-mode)
   :custom
-  (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
+  (org-bullets-bullet-list '("☯" "✿" "✚" "❀" "◉" "○" "●")))
 
 (defun my-org-mode-visual-fill ()
   (setq visual-fill-column-width 100

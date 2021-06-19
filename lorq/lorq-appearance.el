@@ -51,6 +51,6 @@
    :hook (prog-mode . rainbow-delimiters-mode))
 
 (use-package doom-themes
-  :init (load-theme 'doom-gruvbox t))
+  :init (load-theme 'doom-one t))
 
 (provide 'lorq-appearance)
