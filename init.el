@@ -18,7 +18,7 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
-;; Core config files
+;; load path 
 (add-to-list 'load-path
              (expand-file-name "lorq" user-emacs-directory))
 
@@ -29,6 +29,10 @@
 (require 'lorq-evil)
 (require 'lorq-ivy)
 (require 'lorq-lsp)
+(require 'lorq-dashboard)
+(require 'lorq-project)
+(require 'lorq-org)
+(require 'lorq-edit)
 
 ;; machine depended confit put into custom.el
 (setq custom-file "~/.emacs.d/custom.el")

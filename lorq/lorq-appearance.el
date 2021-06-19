@@ -10,8 +10,14 @@
 ;; Set up the visible bell
 (setq visible-bell t)
 
+;; set fullscreen while startup
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
 ;; Make ESC quit prompts
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+
+;; font
+(set-face-attribute 'default nil :height 150)
 
 ;; if get error while connect raw.githubusercontent.com:443, edit hosts file,
 ;; find ways here ->   https://learnku.com/articles/40037

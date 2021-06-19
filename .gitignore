@@ -3,6 +3,7 @@
 README.md
 elpa/
 eshell/
-init.el~
 custom.el
-custom.el~
+*~
+projectile-bookmarks.eld
+recentf
