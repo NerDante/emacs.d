@@ -4,3 +4,5 @@ README.md
 elpa/
 eshell/
 init.el~
+custom.el
+custom.el~
