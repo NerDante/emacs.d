@@ -21,6 +21,11 @@
 ;; load path 
 (add-to-list 'load-path
              (expand-file-name "lorq" user-emacs-directory))
+(add-to-list 'load-path
+             (expand-file-name "misc" user-emacs-directory))
+
+;; download lisp not support use-package
+(require 'unicad) ;; universal charset auto detector
 
 ;; submodules
 (require 'lorq-appearance)
