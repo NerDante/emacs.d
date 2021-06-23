@@ -13,8 +13,7 @@
         lsp-session-file "~/.emacs/.cache/lsp-sessions" ;; 给缓存文件换一个位置
         lsp-keymap-prefix "C-l") ;; keymap prefix
   :config
-  (lsp-enable-which-key-integration t)
-  )
+  (lsp-enable-which-key-integration t))
 
 ;; 内容呈现
 (use-package lsp-ui

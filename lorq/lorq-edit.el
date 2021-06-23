@@ -26,4 +26,9 @@
         avy-all-windows t ;; 搜索所有 window，即所有「可视范围」
         avy-timeout-seconds 0.3)) ;; 「关键字输入完毕」信号的触发时间
 
+;;; for c programming
+(setq c-default-style "linux"
+      c-basic-offset 4)
+
+
 (provide 'lorq-edit)

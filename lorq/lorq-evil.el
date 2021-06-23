@@ -22,4 +22,7 @@
   :config
   (evil-collection-init))
 
+(use-package evil-nerd-commenter
+  :ensure t)
+
 (provide 'lorq-evil)

@@ -10,6 +10,8 @@
     "b"  '(switch-to-buffer :which-key "switch-to-buffer")
     ;; avy quick jump
     "s"  '(avy-goto-char-timer :which-key "avy-quick-jump")
+    ;; comment
+    "c"  '(evilnc-comment-or-uncomment-lines :which-key "(un)comment")
 
     ;; find
     "f" '(:ignore t :which-key "find")
