@@ -19,5 +19,11 @@
   (sp-pair "`" nil :actions :rem)
   (setq sp-highlight-pair-overlay nil))
 
+;;; avy
+(use-package avy
+  :config
+  (setq avy-background t ;; 打关键字时给匹配结果加一个灰背景，更醒目
+        avy-all-windows t ;; 搜索所有 window，即所有「可视范围」
+        avy-timeout-seconds 0.3)) ;; 「关键字输入完毕」信号的触发时间
 
 (provide 'lorq-edit)

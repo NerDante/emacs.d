@@ -7,3 +7,5 @@ custom.el
 *~
 projectile-bookmarks.eld
 recentf
+quelpa/
+transient/
