@@ -1,10 +1,14 @@
+(defconst my-leader ";")
 
 (use-package general
   :config
   (general-create-definer my-leader-def
-    :keymaps '(normal insert visual emacs)
-    :prefix ";"
-    :global-prefix "C-SPC")
+    :keymaps '(normal visual emacs)
+    :prefix my-leader)
+
+  (my-leader-def
+    :keymaps 'projectile-command-map
+    :prefix "p")
 
   (my-leader-def
     "b"  '(switch-to-buffer :which-key "switch-to-buffer")
@@ -34,9 +38,10 @@
     "wj" '(windmove-down :which-key "to-down")
     "wk" '(windmove-up :which-key "to-up")
 
-    ;; toggles 
+    ;; toggles
     "t"  '(:ignore t :which-key "toggles")
     "tt" '(counsel-load-theme :which-key "choose theme")))
+
 
 
 (use-package which-key

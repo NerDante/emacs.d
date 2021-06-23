@@ -1,4 +1,4 @@
-
+;;; Code  appearance
 (setq inhibit-startup-message t)
 
 (scroll-bar-mode -1)        ; Disable visible scrollbar
@@ -32,7 +32,7 @@
   :if (display-graphic-p)
   :hook (dired-mode . all-the-icons-dired-mode))
 
-;; show numers 
+;; show numers
 (column-number-mode)
 (global-display-line-numbers-mode t)
 ;; Disable line numbers for some modes
@@ -55,3 +55,4 @@
 
 
 (provide 'lorq-appearance)
+;;; lorq-appearance.el ends here

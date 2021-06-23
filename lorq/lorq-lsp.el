@@ -10,8 +10,9 @@
   (setq lsp-auto-configure t ;; 尝试自动配置自己
         lsp-auto-guess-root t ;; 尝试自动猜测项目根文件夹
         lsp-idle-delay 0.500 ;; 多少时间idle后向服务器刷新信息
-        lsp-session-file "~/.emacs/.cache/lsp-sessions" ;; 给缓存文件换一个位置
-        lsp-keymap-prefix "C-l") ;; keymap prefix
+        lsp-session-file "~/.emacs/.cache/lsp-sessions") ;; 给缓存文件换一个位置
+  :general
+  (my-leader-def "l" '(:keymap lsp-command-map :which-key "lsp"))
   :config
   (lsp-enable-which-key-integration t))
 

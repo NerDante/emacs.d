@@ -2,8 +2,7 @@
   :ensure t
   :init
   (projectile-mode +1)
-  :bind (:map projectile-mode-map
-              ("C-c p" . projectile-command-map)
-              ))
+  :general
+  (my-leader-def "p" '(:keymap projectile-command-map :which-key "projectile")))
 
 (provide 'lorq-project)
