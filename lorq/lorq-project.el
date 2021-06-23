@@ -1,3 +1,7 @@
+;;; lorq-project.el --- projectile---
+;;; Commentary:
+
+;;; Code:
 (use-package projectile
   :ensure t
   :init
@@ -6,3 +10,6 @@
   (my-leader-def "p" '(:keymap projectile-command-map :which-key "projectile")))
 
 (provide 'lorq-project)
+
+;;; lorq-project.el ends here
+

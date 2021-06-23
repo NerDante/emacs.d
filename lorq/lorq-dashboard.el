@@ -1,3 +1,8 @@
+;;; lorq-dashboard.el --- dashboard ---
+;;; Commentary:
+
+;;; Code:
+
 (use-package dashboard
   :init
   (add-hook 'after-init-hook 'dashboard-refresh-buffer)
@@ -17,3 +22,5 @@
 
 
 (provide 'lorq-dashboard)
+
+;;; lorq-dashboard.el ends here

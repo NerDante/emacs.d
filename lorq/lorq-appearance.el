@@ -1,4 +1,8 @@
-;;; Code  appearance
+;;; lorq-appearance.el --- appearance ---
+;;; Commentary:
+
+;;; Code:
+
 (setq inhibit-startup-message t)
 
 (scroll-bar-mode -1)        ; Disable visible scrollbar
@@ -53,6 +57,6 @@
 (use-package doom-themes
   :init (load-theme 'doom-one t))
 
-
 (provide 'lorq-appearance)
+
 ;;; lorq-appearance.el ends here

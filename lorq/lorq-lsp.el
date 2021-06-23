@@ -1,3 +1,7 @@
+;;; lorq-lsp.el --- lsp ---
+;;; Commentary:
+
+;;; Code:
 
 (use-package lsp-mode
   ;; 延时加载：仅当 (lsp) 函数被调用时再 (require)
@@ -38,7 +42,6 @@
   (setq lsp-enable-symbol-highlighting t
 	lsp-ui-peek-enable t
 	lsp-ui-imenu-enable t
-	lsp-ui-flycheck-enable t
         lsp-ui-doc-enable nil
         lsp-lens-enable t))
 
@@ -47,3 +50,6 @@
 (use-package cmake-mode)
 
 (provide 'lorq-lsp)
+
+;;; lorq-lsp.el ends here
+

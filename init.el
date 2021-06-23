@@ -1,4 +1,7 @@
-;;; entrance of config
+;;; init.el --- init ---
+;;; Commentary:
+
+;;; Code:
 
 (require 'package)
 (package-initialize)
@@ -18,7 +21,7 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
-;; load path 
+;; load path
 (add-to-list 'load-path
              (expand-file-name "lorq" user-emacs-directory))
 (add-to-list 'load-path
@@ -47,5 +50,5 @@
   (write-region "" nil custom-file))
 (load custom-file)
 
-;;; end of init.el
+;;; init.el ends here
 

@@ -1,3 +1,8 @@
+;;; lorq-completion.el --- auto completion ---
+;;; Commentary:
+
+;;; Code:
+
 (use-package company
   :delight
   :hook (after-init . global-company-mode)
@@ -14,23 +19,6 @@
     (append (if (consp backend) backend (list backend))
             '(:with company-yasnippet))))
 
-;; Popup documentation for completion candidates
-; (use-package posframe
-;   :quelpa (posframe :fetcher github :repo "tumashu/posframe" :files ("posframe.el")))
-;
-; (use-package company-posframe
-;   :quelpa (company-posframe :fetcher github :repo "tumashu/company-posframe" :files ("company-posframe.el"))
-;   :delight
-;   :config
-;   (company-posframe-mode 1))
-
-; (use-package company-quickhelp
-;   ;; :bind (:map company-active-map
-;   ;; ("M-h" . company-quickhelp-manual-begin))
-;   :hook (global-company-mode . company-quickhelp-mode)
-;   :config
-;   (setq company-quickhelp-delay 0.2))
-
 ;; Icons and fancies
 (use-package all-the-icons)
 
@@ -44,11 +32,7 @@
         company-box-doc-delay 0.5
         company-box-icons-alist 'company-box-icons-all-the-icons))
 
-;; prescient.el: simple but effective sorting and filtering for Emacs.
-; (use-package company-prescient
-;   :after (company)
-;   :config
-;   (company-prescient-mode t))
-
 (provide 'lorq-completion)
+
+;;; lorq-completion.el ends here
 

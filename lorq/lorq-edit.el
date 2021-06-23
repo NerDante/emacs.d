@@ -1,3 +1,7 @@
+;;; lorq-edit.el --- edit ---
+;;; Commentary:
+
+;;; Code:
 
 ;;; smartparens
 (use-package smartparens
@@ -39,3 +43,5 @@
 
 
 (provide 'lorq-edit)
+
+;;; lorq-edit.el ends here

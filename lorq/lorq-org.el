@@ -1,3 +1,7 @@
+;;; lorq-org.el --- org mode configuration ---
+;;; Commentary:
+
+;;; Code:
 (defun my-org-setup()
   (org-indent-mode)
   (variable-pitch-mode 1)
@@ -52,3 +56,6 @@
   :hook(org-mode . my-org-mode-visual-fill))
 
 (provide 'lorq-org)
+
+;;; lorq-org.el ends here
+

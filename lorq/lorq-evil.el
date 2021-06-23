@@ -1,3 +1,7 @@
+;;; lorq-evil.el --- evil-mode ---
+;;; Commentary:
+
+;;; Code:
 
 (use-package evil
   :init
@@ -26,3 +30,5 @@
   :ensure t)
 
 (provide 'lorq-evil)
+
+;;; lorq-evil.el ends here

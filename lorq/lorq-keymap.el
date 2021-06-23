@@ -1,3 +1,7 @@
+;;; lorq-keymap.el --- key maps ---
+;;; Commentary:
+
+;;; Code:
 (defconst my-leader ";")
 
 (use-package general
@@ -55,4 +59,6 @@
 (add-hook 'c++-mode-hook 'lsp)
 
 (provide 'lorq-keymap)
+
+;;; lorq-keymap.el ends here
 

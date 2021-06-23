@@ -1,3 +1,7 @@
+;;; lorq-ivy.el --- ivy ---
+;;; Commentary:
+
+;;; Code:
 
 (use-package ivy
   :diminish
@@ -31,3 +35,6 @@
     (counsel-mode 1))
 
 (provide 'lorq-ivy)
+
+;;; lorq-ivy.el ends here
+
