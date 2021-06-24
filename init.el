@@ -2,8 +2,9 @@
 ;;; Commentary:
 
 ;;; Code:
-
 (require 'package)
+;; Error (use-package): Failed to install lsp-mode: Failed to verify signature: "spinner-1.7.3.el.sig"
+(setq package-check-signature nil)
 (package-initialize)
 
 ;; set package sources

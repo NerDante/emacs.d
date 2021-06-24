@@ -35,11 +35,11 @@
       c-basic-offset 4)
 
 ;;; flaycheck
-(use-package flycheck
-  :init
-  (setq flycheck-emacs-lisp-load-path 'inherit)
-  :config
-  (global-flycheck-mode))
+; (use-package flycheck
+;   :init
+;   (setq flycheck-emacs-lisp-load-path 'inherit)
+;   :config
+;   (global-flycheck-mode))
 
 
 (provide 'lorq-edit)
