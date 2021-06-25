@@ -23,6 +23,10 @@
     "b"  '(switch-to-buffer :which-key "switch-to-buffer")
     ;; comment
     "c"  '(evilnc-comment-or-uncomment-lines :which-key "comment(out)")
+    ;; close current buffer
+    "k"  '(kill-current-buffer :which-key "kill-current-buffer")
+    ;; save 
+    "s"  '(save-buffer :which-key "save-buffer")
     ;; text scale
     "="  '(text-scale-increase :which-key "text-scale-increase")
     "-"  '(text-scale-decrease :which-key "text-scale-decrease")
@@ -62,8 +66,9 @@
     "wl" '(windmove-right :which-key "to-right")
     "wh" '(windmove-left :which-key "to-left")
     "wj" '(windmove-down :which-key "to-down")
-    "wk" '(windmove-up :which-key "to-up")))
-
+    "wk" '(windmove-up :which-key "to-up")
+    ;; remap C-x
+    "x" '(:keymap ctl-x-map :which-key "ctl-x-map")))
 
 
 (use-package which-key

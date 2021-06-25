@@ -36,7 +36,6 @@
 (require 'lorq-keymap)
 (require 'lorq-completion)
 (require 'lorq-evil)
-(require 'lorq-ivy)
 (require 'lorq-lsp)
 (require 'lorq-dashboard)
 (require 'lorq-project)
