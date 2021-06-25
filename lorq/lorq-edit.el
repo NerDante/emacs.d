@@ -47,6 +47,12 @@
 ;   (global-flycheck-mode))
 
 
+;;; symbol-overlay
+(use-package symbol-overlay
+  :ensure t)
+  :general
+  (my-leader-def "m" '(:keymap symbol-overlay-map :which-key "symbol-overlay"))
+
 (provide 'lorq-edit)
 
 ;;; lorq-edit.el ends here

@@ -19,11 +19,20 @@
          ("C-k" . ivy-previous-line)
          ("C-d" . ivy-reverse-i-search-kill))
   :config
-  (ivy-mode 1))
+  (ivy-mode 1)
+  :custom
+  (ivy-height 15)
+  (ivy-fixed-height-minibuffer t)
+  (ivy-display-style 'fansy)
+  (ivy-count-format "%d/%d"))
 
 (use-package ivy-rich
    :init
    (ivy-rich-mode 1))
+(use-package all-the-icons-ivy
+  :ensure t
+  :init
+  (add-hook 'after-init-hook 'all-the-icons-ivy-setup))
 
 (use-package counsel
     :bind (("C-M-j" . 'counsel-switch-buffer)

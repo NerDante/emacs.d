@@ -4,8 +4,7 @@
 ;;; Code:
 
 (use-package magit
-  :bind (("C-x g" . magit-status)
-         ("C-x C-g" . magit-status)))
+  :ensure t)
 
 (use-package git-gutter+
   :ensure t
