@@ -44,6 +44,7 @@
 (require 'lorq-edit)
 (require 'lorq-git)
 (require 'lorq-snippet)
+(require 'lorq-treemacs)
 
 ;; machine depended confit put into custom.el
 (setq custom-file "~/.emacs.d/custom.el")

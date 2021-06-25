@@ -28,8 +28,13 @@
   :config
   (setq avy-background t ;; 打关键字时给匹配结果加一个灰背景，更醒目
         avy-all-windows t ;; 搜索所有 window，即所有「可视范围」
-        avy-timeout-seconds 0.3)) ;; 「关键字输入完毕」信号的触发时间
+        avy-timeout-seconds 0.1)) ;; 「关键字输入完毕」信号的触发时间
 
+
+;;; tab width
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq indent-line-function 'insert-tab)
 ;;; for c programming
 (setq c-default-style "linux"
       c-basic-offset 4)

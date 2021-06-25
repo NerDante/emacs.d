@@ -39,6 +39,7 @@
 ;; show numers
 (column-number-mode)
 (global-display-line-numbers-mode t)
+(setq display-line-numbers-type 'relative) 
 ;; Disable line numbers for some modes
 (dolist (mode '(org-mode-hook
                 term-mode-hook

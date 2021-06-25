@@ -15,9 +15,12 @@
     :prefix "p")
 
   (my-leader-def
+    ;; goback to last position
+    "," '(xref-pop-marker-stack :which-key "back")
+    ;; tag
+    ";"  '(projectile-find-tag :which-key "find-tag")
+    ;; switch buffer
     "b"  '(switch-to-buffer :which-key "switch-to-buffer")
-    ;; avy quick jump
-    "s"  '(avy-goto-char-timer :which-key "avy-quick-jump")
     ;; comment
     "c"  '(evilnc-comment-or-uncomment-lines :which-key "(un)comment")
 
@@ -31,6 +34,16 @@
     "gd"  '(lsp-find-definition :which-key "goto-definition")
     "gr"  '(lsp-find-references :which-key "find-references")
 
+    ;; quick-jump 
+    "j" '(:ignore t :which-key "quikc-jump")
+    "jc" '(avy-goto-char-timer :which-key "avy-goto-char-timer")
+    "jj" '(avy-goto-line-below :which-key "avy-goto-line-below")
+    "jk" '(avy-goto-line-above :which-key "avy-goto-line-above")
+
+    "o" '(:ignore t :which-key "open")
+    "ot" '(treemacs :which-key "toogle-treemacs")
+    "oc" '(counsel-load-theme :which-key "choose theme")
+
     ;; window operation
     "w" '(:ignore t :which-key "window-operation")
     "wv" '(split-window-right :which-key "split-right")
@@ -40,11 +53,7 @@
     "wl" '(windmove-right :which-key "to-right")
     "wh" '(windmove-left :which-key "to-left")
     "wj" '(windmove-down :which-key "to-down")
-    "wk" '(windmove-up :which-key "to-up")
-
-    ;; toggles
-    "t"  '(:ignore t :which-key "toggles")
-    "tt" '(counsel-load-theme :which-key "choose theme")))
+    "wk" '(windmove-up :which-key "to-up")))
 
 
 

@@ -26,24 +26,22 @@
   :after (lsp-mode)
   ;; 延时加载
   :commands (lsp-ui-mode)
-  :bind
-  (:map lsp-ui-mode-map
-        ;; 查询符号定义：使用 LSP 来查询。通常是 M-.
-        ([remap xref-find-references] . lsp-ui-peek-find-references)
-        ;; 查询符号引用：使用 LSP 来查询。通常是 M-?
-        ([remap xref-find-definitions] . lsp-ui-peek-find-definitions)
-        ;; 该文件里的符号列表：类、方法、变量等。前提是语言服务支持本功能。
-        ("C-c u" . lsp-ui-imenu))
   ;; 当 lsp 被激活时自动激活 lsp-ui
   :hook (lsp-mode . lsp-ui-mode)
   :init
   ;; lsp-ui 有相当细致的功能开关。具体参考：
   ;; https://github.com/emacs-lsp/lsp-mode/blob/master/docs/tutorials/how-to-turn-off.md
   (setq lsp-enable-symbol-highlighting t
-	lsp-ui-peek-enable t
 	lsp-ui-imenu-enable t
-        lsp-ui-doc-enable nil
-        lsp-lens-enable t))
+    lsp-ui-doc-enable t 
+	lsp-ui-sideline-show-code-action t
+	lsp-ui-sideline-show-diagnostics nil 
+	lsp-modeline-code-actions-enable t 
+	lsp-ui-sideline-show-hover nil
+	lsp-headerline-breadcrumb-enable nil
+	lsp-signature-render-documention nil
+	lsp-signature-auto-active nil
+    lsp-lens-enable t))
 
 
 (use-package cc-mode)
