@@ -58,6 +58,10 @@
 (use-package doom-themes
   :init (load-theme 'doom-one t))
 
+;; awesome-tab
+(awesome-tab-mode t)
+(setq awesome-tab-height 128)
+
 (provide 'lorq-appearance)
 
 ;;; lorq-appearance.el ends here

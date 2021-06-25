@@ -15,10 +15,14 @@
     :prefix "p")
 
   (my-leader-def
-    ;; goback to last position
     "," '(xref-pop-marker-stack :which-key "back <==")
     ;; tag
     ";"  '(projectile-find-tag :which-key "find-tag")
+    ;; awesome-tab
+    "a" '(:ignore t :which-key "awesome-tab")
+    "aj"  '(awesome-tab-backward-tab :which-key "awesome-tab-backward-tab")
+    "ak"  '(awesome-tab-forward-tab :which-key "awesome-tab-forward-tab")
+
     ;; switch buffer
     "b"  '(switch-to-buffer :which-key "switch-to-buffer")
     ;; comment

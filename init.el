@@ -30,6 +30,7 @@
 
 ;; download lisp not support use-package
 (require 'unicad) ;; universal charset auto detector
+(require 'awesome-tab)
 
 ;; submodules
 (require 'lorq-appearance)
