@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name:LOGERROR(fmt, ...);
+# key:le 
+# --
+LOGERROR("${1:error}\n");

@@ -20,15 +20,18 @@
     ";"  '(projectile-find-tag :which-key "find-tag")
     ;; awesome-tab
     "a" '(:ignore t :which-key "awesome-tab")
-    "aj"  '(awesome-tab-backward-tab :which-key "awesome-tab-backward-tab")
-    "ak"  '(awesome-tab-forward-tab :which-key "awesome-tab-forward-tab")
+    "as"  '(awesome-tab-counsel-switch-group :which-key "awesome-tab-counsel-switch-group")
+    "aj"  '(awesome-tab-forward-tab :which-key "awesome-tab-forward-tab")
+    "ak"  '(awesome-tab-backward-tab :which-key "awesome-tab-backward-tab")
 
-    ;; switch buffer
+    ;; Switch buffer
     "b"  '(switch-to-buffer :which-key "switch-to-buffer")
     ;; comment
     "c"  '(evilnc-comment-or-uncomment-lines :which-key "comment(out)")
     ;; close current buffer
     "k"  '(kill-current-buffer :which-key "kill-current-buffer")
+    ;; close current buffer
+    "r"  '(eval-buffer :which-key "eval-buffer")
     ;; save 
     "s"  '(save-buffer :which-key "save-buffer")
     ;; text scale

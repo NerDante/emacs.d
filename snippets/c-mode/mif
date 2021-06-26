@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: if (condition) {...} 
+# key: mif 
+# --
+if (${1:condition})
+{
+    $0
+}

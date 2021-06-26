@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name:LOGINFO(fmt, ...);
+# key:li 
+# --
+LOGINFO("${1:message}\n");

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name:LOGWARN(fmt, ...);
+# key:lw 
+# --
+LOGWARN("${1:warning}\n");

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: LOGMOD(DBG_IPADP, LOGMOD_DEV, ...) 
+# key:lm 
+# --
+LOGMOD(${1:DBG_IPADP}, ${2:LOGMOD_DEV}, "${3:message}\n"); 
+ 

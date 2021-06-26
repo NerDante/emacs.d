@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: if (condition) {...} else {...}
+# key: mife 
+# --
+if (${1:condition})
+{
+    $0
+}
+else
+{
+
+}
