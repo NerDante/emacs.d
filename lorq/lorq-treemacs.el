@@ -9,6 +9,10 @@
   :init
   (with-eval-after-load 'winum
     (define-key winum-keymap (kbd "M-0") #'treemacs-select-window))
+
+  ;; on macOS, ls doesn't support the --dired option while on Linux it is supported
+  (when (string= system-type "darwin")       
+    (setq dired-use-ls-dired nil))
   :config
   (progn
     (setq treemacs-collapse-dirs                 (if treemacs-python-executable 3 0)
