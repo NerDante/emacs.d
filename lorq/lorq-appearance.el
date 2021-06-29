@@ -3,7 +3,7 @@
 
 ;;; Code:
 
-(setq inhibit-startup-message t)
+(setq inhibit-startup-message t) ; Disable welcome page
 
 (scroll-bar-mode -1)        ; Disable visible scrollbar
 (tool-bar-mode -1)          ; Disable the toolbar
@@ -12,7 +12,7 @@
 (menu-bar-mode -1)          ; Disable the menu bar
 
 ;; Set up the visible bell
-(setq visible-bell t)
+(setq visible-bell nil)
 
 ;; set fullscreen while startup
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
@@ -64,7 +64,7 @@
 (setq
   awesome-tab-height 128
   ;; awesome-tab-display-sticky-function-name t
-  awesome-tab-index-format-str " %d"
+  awesome-tab-index-format-str " %d "
   awesome-tab-show-tab-index t)
 
 (provide 'lorq-appearance)

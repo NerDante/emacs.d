@@ -3,6 +3,13 @@
 
 ;;; Code:
 
+;; disable auto-save and auto-backup
+(setq auto-save-default nil)
+(setq make-backup-files nil)
+
+;; hight current line
+(global-hl-line-mode t)
+
 ;;; smartparens
 (use-package smartparens
   :init
@@ -18,7 +25,7 @@
 
   :config
   (smartparens-global-mode t)
-
+  (show-smartparens-global-mode t)
   (sp-pair "'" nil :actions :rem)
   (sp-pair "`" nil :actions :rem)
   (setq sp-highlight-pair-overlay nil))
