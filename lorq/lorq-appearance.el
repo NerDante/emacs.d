@@ -44,7 +44,8 @@
 (dolist (mode '(org-mode-hook
                 term-mode-hook
                 shell-mode-hook
-                eshell-mode-hook))
+                eshell-mode-hook
+                treemacs-mode-hook))
     (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
 (use-package doom-modeline
@@ -60,7 +61,11 @@
 
 ;; awesome-tab
 (awesome-tab-mode t)
-(setq awesome-tab-height 128)
+(setq
+  awesome-tab-height 128
+  ;; awesome-tab-display-sticky-function-name t
+  awesome-tab-index-format-str " %d"
+  awesome-tab-show-tab-index t)
 
 (provide 'lorq-appearance)
 

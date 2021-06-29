@@ -39,19 +39,12 @@
 (setq c-default-style "linux"
       c-basic-offset 4)
 
-;;; flaycheck
-; (use-package flycheck
-;   :init
-;   (setq flycheck-emacs-lisp-load-path 'inherit)
-;   :config
-;   (global-flycheck-mode))
-
-
 ;;; symbol-overlay
 (use-package symbol-overlay
   :ensure t)
   :general
   (my-leader-def "m" '(:keymap symbol-overlay-map :which-key "symbol-overlay"))
+
 
 (provide 'lorq-edit)
 

@@ -75,7 +75,19 @@
     "wj" '(windmove-down :which-key "to-down")
     "wk" '(windmove-up :which-key "to-up")
     ;; remap C-x
-    "x" '(:keymap ctl-x-map :which-key "ctl-x-map")))
+    "x" '(:keymap ctl-x-map :which-key "ctl-x-map"))
+
+  (general-define-key
+    ;; choose tab with index
+    "M-1"  '(awesome-tab-select-visible-tab :which-key "select-tab-1")
+    "M-2"  '(awesome-tab-select-visible-tab :which-key "select-tab-2")
+    "M-3"  '(awesome-tab-select-visible-tab :which-key "select-tab-3")
+    "M-4"  '(awesome-tab-select-visible-tab :which-key "select-tab-4")
+    "M-5"  '(awesome-tab-select-visible-tab :which-key "select-tab-5")
+    "M-6"  '(awesome-tab-select-visible-tab :which-key "select-tab-6")
+    "M-7"  '(awesome-tab-select-visible-tab :which-key "select-tab-7")
+    "M-8"  '(awesome-tab-select-visible-tab :which-key "select-tab-8")
+    "M-9"  '(awesome-tab-select-visible-tab :which-key "select-tab-9")))
 
 
 (use-package which-key
