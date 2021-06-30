@@ -3,13 +3,19 @@
 
 ;;; Code:
 
-(setq inhibit-startup-message t) ; Disable welcome page
+;; Disable welcome page
+(setq inhibit-startup-message t)
+;; Disable visible scrollbar
+(scroll-bar-mode -1)
+;; Disable the toolbar
+(tool-bar-mode -1)
+;; Disable tooltips
+(tooltip-mode -1)
+;; Disable the menu bar
+(menu-bar-mode -1)
 
-(scroll-bar-mode -1)        ; Disable visible scrollbar
-(tool-bar-mode -1)          ; Disable the toolbar
-(tooltip-mode -1)           ; Disable tooltips
-(set-fringe-mode 10)        ; Give some breathing room
-(menu-bar-mode -1)          ; Disable the menu bar
+;; Give some breathing room
+(set-fringe-mode 10)
 
 ;; Set up the visible bell
 (setq visible-bell nil)
@@ -72,5 +78,12 @@
   :ensure t)
 
 (provide 'lorq-appearance)
+
+;; indent line 
+(use-package highlight-indent-guides
+  :ensure t
+  :hook (prog-mode . highlight-indent-guides-mode)
+  :config
+  (setq highlight-indent-guides-method 'bitmap))
 
 ;;; lorq-appearance.el ends here
