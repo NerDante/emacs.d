@@ -43,10 +43,6 @@
 	lsp-signature-auto-active nil
     lsp-lens-enable t))
 
-
-(use-package cc-mode)
-(use-package cmake-mode)
-
 (provide 'lorq-lsp)
 
 ;;; lorq-lsp.el ends here

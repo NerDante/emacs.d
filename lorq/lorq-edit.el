@@ -42,9 +42,6 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 (setq indent-line-function 'insert-tab)
-;;; for c programming
-(setq c-default-style "linux"
-      c-basic-offset 4)
 
 ;;; symbol-overlay
 (use-package symbol-overlay
