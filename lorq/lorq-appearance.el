@@ -84,6 +84,8 @@
   :ensure t
   :hook (prog-mode . highlight-indent-guides-mode)
   :config
-  (setq highlight-indent-guides-method 'bitmap))
+  (setq
+   highlight-indent-guides-responsive 'top
+   highlight-indent-guides-method 'character))
 
 ;;; lorq-appearance.el ends here
