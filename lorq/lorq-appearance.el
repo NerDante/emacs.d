@@ -67,6 +67,10 @@
   awesome-tab-index-format-str " %d "
   awesome-tab-show-tab-index t)
 
+;; posframe
+(use-package posframe
+  :ensure t)
+
 (provide 'lorq-appearance)
 
 ;;; lorq-appearance.el ends here

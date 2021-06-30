@@ -58,10 +58,24 @@
 (use-package ivy-rich
    :init
    (ivy-rich-mode 1))
+
 (use-package all-the-icons-ivy
   :ensure t
   :init
   (add-hook 'after-init-hook 'all-the-icons-ivy-setup))
+
+(use-package ivy-posframe
+  :ensure t
+  :after ivy posframe
+  :config
+  ;; Different command can use different display function.
+  (setq ivy-posframe-display-functions-alist
+        '((swiper          . ivy-display-function-fallback)
+          (complete-symbol . ivy-posframe-display-at-point)
+          ;(counsel-M-x     . ivy-posframe-display-at-window-center)
+          (counsel-M-x     . ivy-posframe-display-at-frame-center)
+          (t               . ivy-posframe-display)))
+  (ivy-posframe-mode t))
 
 (use-package counsel
     :bind (("C-M-j" . 'counsel-switch-buffer)
