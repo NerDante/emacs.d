@@ -7,9 +7,6 @@
   :ensure t
   :defer t
   :init
-  (with-eval-after-load 'winum
-    (define-key winum-keymap (kbd "M-0") #'treemacs-select-window))
-
   ;; on macOS, ls doesn't support the --dired option while on Linux it is supported
   (when (string= system-type "darwin")       
     (setq dired-use-ls-dired nil))
@@ -71,15 +68,7 @@
       (`(t . t)
        (treemacs-git-mode 'deferred))
       (`(t . _)
-       (treemacs-git-mode 'simple))))
-  :bind
-  (:map global-map
-        ("M-0"       . treemacs-select-window)
-        ("C-x t 1"   . treemacs-delete-other-windows)
-        ("C-x t t"   . treemacs)
-        ("C-x t B"   . treemacs-bookmark)
-        ("C-x t C-t" . treemacs-find-file)
-        ("C-x t M-t" . treemacs-find-tag)))
+       (treemacs-git-mode 'simple)))))
 
 (use-package treemacs-evil
   :after (treemacs evil)

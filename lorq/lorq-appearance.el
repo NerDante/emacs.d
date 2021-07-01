@@ -70,7 +70,7 @@
 (setq
   awesome-tab-height 128
   ;; awesome-tab-display-sticky-function-name t
-  awesome-tab-index-format-str " %d "
+  awesome-tab-index-format-str "%d "
   awesome-tab-show-tab-index t)
 
 ;; posframe
