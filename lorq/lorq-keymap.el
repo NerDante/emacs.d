@@ -59,6 +59,9 @@
     "ot" '(treemacs :which-key "toogle-treemacs")
     "oc" '(counsel-load-theme :which-key "choose theme")
 
+    ;; terminal
+    "t"  '(eshell :which-key "eshell")
+
     ;; git
     "v" '(:ignore t :which-key "magit")
     "vs" '(magit-status :which-key "magit-status")
