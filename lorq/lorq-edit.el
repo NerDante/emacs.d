@@ -49,6 +49,9 @@
   :general
   (my-leader-def "m" '(:keymap symbol-overlay-map :which-key "symbol-overlay"))
 
+;;; expand-region
+(use-package expand-region
+  :ensure t)
 
 (provide 'lorq-edit)
 

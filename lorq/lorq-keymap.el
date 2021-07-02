@@ -80,7 +80,10 @@
     ;; remap C-x
     "x" '(:keymap ctl-x-map :which-key "ctl-x-map"))
 
+  ;; keymap not use leaderkey
   (general-define-key
+    ;; expand region 
+    "C-<return>" '(er/expand-region :which-key "expand-region")
     ;; choose tab with index
     "M-1"  '(awesome-tab-select-visible-tab :which-key "select-tab-1")
     "M-2"  '(awesome-tab-select-visible-tab :which-key "select-tab-2")
