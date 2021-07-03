@@ -2,17 +2,17 @@
 ;;; Commentary:
 
 ;;; Code:
-(defconst my-leader ";")
 
 (use-package general
   :config
   (general-create-definer my-leader-def
     :keymaps '(normal visual emacs)
-    :prefix my-leader)
+    :prefix ";"
+    :non-normal-prefix "C-;")
 
-  (my-leader-def
-    :keymaps 'projectile-command-map
-    :prefix "p")
+  (general-create-definer lorq-space-leader-def
+    :keymaps '(normal visual emacs)
+    :prefix "SPC")
 
   (my-leader-def
     "," '(xref-pop-marker-stack :which-key "back <==")
@@ -83,6 +83,12 @@
     "wk" '(windmove-up :which-key "to-up")
     ;; remap C-x
     "x" '(:keymap ctl-x-map :which-key "ctl-x-map"))
+
+  (lorq-space-leader-def
+    "SPC" '(avy-goto-char-timer :which-key "avy-goto-char-timer")
+    "b" '(counsel-projectile-switch-to-buffer :which-key "counsel-projectile-switch-to-buffer")
+    "s" '(swiper :which-key "swiper")
+    "f" '(counsel-projectile-find-file :which-key "counsel-projectile-find-file"))
 
   ;; keymap not use leaderkey
   (general-define-key

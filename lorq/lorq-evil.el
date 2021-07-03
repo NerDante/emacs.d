@@ -29,6 +29,12 @@
 (use-package evil-nerd-commenter
   :ensure t)
 
+(use-package evil-escape
+ :ensure t
+ :config
+ (setq-default evil-escape-key-sequence "jk")
+ (evil-escape-mode))
+
 (provide 'lorq-evil)
 
 ;;; lorq-evil.el ends here
