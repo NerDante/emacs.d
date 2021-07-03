@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name:LOGDEBUG(fmt, ...);
+# key:ld 
+# --
+LOGDEBUG("${1:message}\n");
