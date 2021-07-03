@@ -28,6 +28,10 @@
     "b"  '(switch-to-buffer :which-key "switch-to-buffer")
     ;; comment
     "c"  '(evilnc-comment-or-uncomment-lines :which-key "comment(out)")
+
+    "e" '(:ignore t :which-key "edit")
+    "ea"  '(align-regexp :which-key "align-regxep")
+
     ;; close current buffer
     "k"  '(kill-current-buffer :which-key "kill-current-buffer")
     ;; close current buffer

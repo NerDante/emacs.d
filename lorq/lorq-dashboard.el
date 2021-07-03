@@ -16,9 +16,8 @@
 (setq dashboard-set-file-icons t)
 (setq dashboard-projects-backend 'projectile)
 
-(setq dashboard-items '((projects . 5)
-                        (recents . 5)
-                        (agenda . 5)))
+(setq dashboard-items '((projects . 8)
+                        (recents . 8)))
 
 
 (provide 'lorq-dashboard)

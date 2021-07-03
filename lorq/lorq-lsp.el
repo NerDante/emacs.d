@@ -6,28 +6,23 @@
 (use-package lsp-mode
   ;; 延时加载：仅当 (lsp) 函数被调用时再 (require)
   :commands (lsp)
-  ;; 在哪些语言 major mode 下启用 LSP
   :hook (((cc-mode
            ;; ......
            ) . lsp))
-  :init ;; 在 (reuqire) 之前执行
-  (setq lsp-auto-configure t ;; 尝试自动配置自己
-        lsp-auto-guess-root t ;; 尝试自动猜测项目根文件夹
-        lsp-idle-delay 0.500 ;; 多少时间idle后向服务器刷新信息
+  :init
+  (setq lsp-auto-configure t
+        lsp-auto-guess-root t
+        lsp-idle-delay 0.500
         lsp-diagnostic-package :none ;; disable diagnostic
-        lsp-session-file "~/.emacs/.cache/lsp-sessions") ;; 给缓存文件换一个位置
+        lsp-session-file "~/.emacs/.cache/lsp-sessions")
   :general
   (my-leader-def "l" '(:keymap lsp-command-map :which-key "lsp"))
   :config
   (lsp-enable-which-key-integration t))
 
-;; 内容呈现
 (use-package lsp-ui
-  ;; 仅在某软件包被加载后再加载
   :after (lsp-mode)
-  ;; 延时加载
   :commands (lsp-ui-mode)
-  ;; 当 lsp 被激活时自动激活 lsp-ui
   :hook (lsp-mode . lsp-ui-mode)
   :init
   ;; lsp-ui 有相当细致的功能开关。具体参考：
