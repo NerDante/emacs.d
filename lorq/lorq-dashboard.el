@@ -11,6 +11,7 @@
 
 ;; configuration
 (setq dashboard-banner-logo-title "Welcome LordQqiang")
+(setq dashboard-startup-banner "~/.emacs.d/lorq-banner.png")
 (setq dashboard-center-content t)
 (setq dashboard-set-heading-icons t)
 (setq dashboard-set-file-icons t)
