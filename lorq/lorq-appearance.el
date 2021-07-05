@@ -66,12 +66,27 @@
   :init (load-theme 'doom-one t))
 
 ;; awesome-tab
-(awesome-tab-mode t)
-(setq
-  awesome-tab-height 128
-  ;; awesome-tab-display-sticky-function-name t
-  awesome-tab-index-format-str "%d "
-  awesome-tab-show-tab-index t)
+;; (awesome-tab-mode t)
+;; (setq
+;;   awesome-tab-height 128
+;;   ;; awesome-tab-display-sticky-function-name t
+;;   awesome-tab-index-format-str "%d "
+;;   awesome-tab-show-tab-index t)
+
+;; centaur-tabs
+(use-package centaur-tabs
+  :demand
+  :config
+  (setq centaur-tabs-style "wave")
+  (setq centaur-tabs-set-icons t)
+  (centaur-tabs-headline-match)
+  (setq centaur-tabs-gray-out-icons 'buffer)
+  (setq centaur-tabs-set-bar 'under)
+  ;; Note: If you're not using Spacmeacs, in order for the underline to display
+  ;; correctly you must add the following line:
+  (setq x-underline-at-descent-line t)
+  (setq centaur-tabs-set-modified-marker t)
+  (centaur-tabs-mode t))
 
 ;; posframe
 (use-package posframe
