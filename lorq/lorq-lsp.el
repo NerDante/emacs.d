@@ -7,6 +7,8 @@
   ;; 延时加载：仅当 (lsp) 函数被调用时再 (require)
   :commands (lsp)
   :hook (((cc-mode
+           c-mode
+           c++-mode
            ;; ......
            ) . lsp))
   :init
