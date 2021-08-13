@@ -2,6 +2,10 @@
 ;;; Commentary:
 
 ;;; Code:
+;; 隐藏 title bar
+(setq default-frame-alist '((undecorated . t)))
+(add-to-list 'default-frame-alist '(drag-internal-border . 1))
+(add-to-list 'default-frame-alist '(internal-border-width . 5))
 
 ;; Disable welcome page
 (setq inhibit-startup-message t)
